@@ -1,0 +1,8 @@
+1. Open file
+2. Read first line
+3. slice the line to grab the necessary characters(0-1, 3-4, -4 - -3, -2 - -1)
+4. convert to integers
+5. if the start range of one list is greater than the start range for the other list
+AND
+6. if the end range of one list is less than the end range for the other list
+7. increase counter

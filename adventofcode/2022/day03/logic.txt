@@ -1,0 +1,6 @@
+Logic: 
+1. Read line from file
+2. Split into two arrays (0 to (len of arr / 2) - 1)((len of arr / 2) to (len of arr))
+3. Loop: Take one character from first array, compare it to each charater in the second array.
+4. If a matching character is found, determine score.
+5. Use an equation to determine score of of each letter (add it to priorities)
