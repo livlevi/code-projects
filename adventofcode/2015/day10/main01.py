@@ -1,32 +1,33 @@
-code = '1321131112'
-final = []
-i = 0
-loop = 0
+str1 = '1321131112'
 
-while loop < 40:
-    while i < len(code):
-        if i == ( len(code) - 1 ):
-            final.append('1' + code[i])
-        else:
-            if code[i] == code[i + 1]:
-                count = 1
-                compare = code[i:]
-                j = 0
-                while j < len(compare) and code[i] == code[i + 1]:
-                    count += 1
-                    i += 1
-                    j += 1
-                final.append(str(count) + code[i])
-            else:
-                final.append('1' + code[i])
-        i += 1
-    code = ''.join(final)
-    loop += 1
+for i in range(40):
+    new = ''
+    s = 0
+    while s < len(str1):
+        c = str1[s]
+        n = 1
+        s += 1
+        while s < len(str1) and str1[s] == c:
+            s += 1
+            n += 1
+        new += str(n) + str(c)
+    str1 = new
 
-print(loop)
-print("This is length of final: ")
-print(len(final))
-print("This is length of code: ")
-print(len(code))
+print(len(str1))
 
+str2 = str1
 
+for i in range(10):
+    new = ''
+    s = 0
+    while s < len(str2):
+        c = str2[s]
+        n = 1
+        s += 1
+        while s < len(str2) and str2[s] == c:
+            s += 1
+            n += 1
+        new += str(n) + str(c)
+    str2 = new
+
+print(len(str2))
